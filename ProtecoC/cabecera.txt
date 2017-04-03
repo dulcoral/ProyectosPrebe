@@ -1,0 +1,3 @@
+void funciont(void){
+printf ("\nSoy una funcion\n");
+}

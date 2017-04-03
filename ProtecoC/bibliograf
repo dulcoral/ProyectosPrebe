@@ -1,0 +1,67 @@
+
+
+http://www.educoas.org/portal/bdigital/contenido/valzacchi/ValzacchiCapitulo-2New.pdf
+6-http://es.ccm.net/contents/275-protocolos
+http://www.taringa.net/posts/info/12588433/Protocolos-de-Internet.html
+https://es.wikipedia.org/wiki/Familia_de_protocolos_de_Internet
+http://galido.net/blog/how-does-the-internet-connect-between-continents/
+
+
+
+- ¿Qué es una arquitectura de software?
+De acuerdo al Software Engineering Institute (SEI), la Arquitectura de Software se refiere a “las estructuras de un sistema, compuestas de elementos con propiedades visibles de forma externa y las relaciones que existen entre ellos.”[1]
+
+Conjunto de patrones que proporcionan un marco de referencia necesario para guiar la construcción de un software.[2]
+
+https://sg.com.mx/revista/27/arquitectura-software#.WOForUfasso
+https://www.ecured.cu/Arquitectura_de_software
+- ¿Qué es MVC, MVVM, MVP?
+https://ingsoftwarei2014.wordpress.com/category/comparacion-de-los-patrones-de-arquitectura-mvc-mv-vm-mvp/
+ 
+ 
+
+MVC significa Model View Controller(Modelo Vista Controlador), porque en este patrón de diseño se separan los datos de una aplicación, la interfaz de usuario, y la lógica de negocio en tres componentes distintos. 
+
+MVVM significa Model view viewmodel (Modelo Vista Vista Modelo), porque en este patrón de diseño se separan los datos de la aplicación, la interfaz de usuario pero en vez de controlar manualmente los cambios en la vista o en los datos, estos se actualizan directamente cuando sucede un cambio en ellos, por ejemplo si la vista actualiza un dato que está presentando se actualiza el modelo automáticamente y viceversa.
+
+
+MVP Model View Presenter (Modelo-Vista-Presentador) surge para ayudar a realizar pruebas automáticas de la interfaz gráfica, para ello la idea es codificar la interfaz de usuario lo más simple posible. En su lugar, toda la lógica de la interfaz de usuario, se hace en una clase separada (que se conoce como Presentador).
+
+
+
+
+- Diferencias entre las 3 arquitecturas
+http://stackoverflow.com/questions/19444431/what-is-difference-between-mvc-mvp-mvvm-design-pattern-in-terms-of-coding-c-s&usg=ALkJrhhU28v4nwHW5Qibf3eavn7wcefMgg
+
+MVP
+
+Utilizado en situaciones en las que la vinculación a través de un datacontext no sea posible. Para separar la vista del modelo, se necesita un presentador. Dado que la vista no puede enlazar directamente al presentador, la información debe pasar a la vista a través de una interfaz 
+Similar al MVC tradicional, pero el controlador es reemplazado por Presentador. El presentador, a diferencia del controlador, es responsable de cambiar la visión también. Normalmente, la vista no llama al presentador.
+
+MVVM
+
+Utilizado en situaciones en las que la vinculación a través de un datacontext sea posible. 
+Existe la presencia de View Model. implementación donde los cambios en el modelo también están representados en la vista por la VM. Por ejemplo: Si se cambia un control deslizante, no solo se actualiza el modelo, sino que también se actualizan los datos que pueden ser un texto que se muestran en la vista. Por lo tanto, hay un enlace de datos bidireccional.
+
+MVC
+
+Utilizado en situaciones en las que la conexión entre la vista y el resto del programa no esté siempre disponible (y no se puede emplear MVVM o MVP). Esto describe claramente la situación en la que una API web está separada de los datos enviados a los navegadores cliente. 
+
+MVC es donde hay un
+Model: Actúa como el modelo de datos
+View:  con vista al usuario 
+Controlador: Controla la interacción entre Model y View, donde la vista llama al controlador para actualizar el modelo.
+- ¿Qué es un framework?
+http://jordisan.net/blog/2006/que-es-un-framework/
+esquema (un esqueleto, un patrón) para el desarrollo y/o la implementación de una aplicación.
+- 3 frameworks por cada una de las 3 arquitecturas
+MVC:https://www.codejobs.biz/es/blog/2013/04/11/los-5-mejores-frameworks-mvc-de-javascript
+- Definición de patron de diseño creacional
+https://msdn.microsoft.com/es-es/library/bb972240.aspx
+Patron de diseño cuyo problema a solucionar es el de crear diferentes familias de objetos, como por ejemplo la creación de interfaces gráficas de distintos tipos (ventana, menú, botón, etc.).
+- ''''' estructural
+https://msdn.microsoft.com/es-es/library/bb972240.aspx
+Separan la interfaz de la implementación. Se ocupan de cómo las clases y objetos se agrupan, para formar estructuras más grandes.
+- ''''' de comportamiento
+http://codejavu.blogspot.mx/2013/06/que-son-los-patrones-de-diseno.html
+Patrones de Comportamiento: Definen el modo en que las clases y objetos son relacionados, el comportamiento he interacción entre ellos.
