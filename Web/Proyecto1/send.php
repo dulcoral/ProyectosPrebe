@@ -9,4 +9,5 @@
   $destino= "dulcoral20@gmail.com";
   $asunto = "Opinion SoGreeen!".$_POST['nombre'];
   mail($destino,$asunto,$mensaje,"FROM: $email");
+  header("Location:index.html");
 ?>
