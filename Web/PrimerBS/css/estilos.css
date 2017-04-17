@@ -1,0 +1,17 @@
+p{
+	width:80%;
+	text-align: justify;
+}
+
+@media screen and (max-width: 1800px) and (min-width: 892px){
+	body{
+		background: green;
+	}
+}
+
+@media screen and (max-width: 891px) and (min-width: 0px){
+	body{
+		background: pink;
+		color: black;
+	}
+}

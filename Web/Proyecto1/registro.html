@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Registro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/terraria-512.png">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">SoGreeen!</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="aboutme.html">Acerca de</a></li>
+            <li><a href="contacto.htm">Contacto</a></li>
+            <li class="dropdown">
+              <a href= "#" class="dropdown-toggle" data-toggle="dropdown">Redes Sociales
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.facebook.com/SoGreeen/">Facebook</a></li>
+                <li><a href="http://Justsogreeen.tumblr.com/">Tumbrl</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="intro">
+      <div class="intro-body text-center">
+        <div class="row">
+          <div class="col-md-12 intro-content">
+            <div class="intro-text-center">
+              <img src="img/15250682_782101778595352_4200812401329173781_o.jpg" width="100%" class="img-responsive" alt="portada" >
+              <h2 style="font-size: 35px">Registro</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--form-->
+    <div class="container">
+      <div class="signup-form-container">
+        <form  role="form" id="register-form" action="registrar.php" method ="POST">
+          <div class="form-body">
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"></div>
+                <input name="nombre" type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <span class="help-block" id="error"></span>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"></div>
+                <input name="apell_P" type="text" class="form-control" placeholder="Apellido Paterno">
+              </div>
+              <span class="help-block" id="error"></span>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"></div>
+                <input name="apell_M" type="text" class="form-control" placeholder="Apellido Materno(opcional)">
+              </div>
+              <span class="help-block" id="error"></span>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"></div>
+                <input name="edad" type="text" class="form-control" placeholder="Edad">
+              </div>
+              <span class="help-block" id="error"></span>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                <input name="username" type="text" class="form-control" placeholder="Usuario">
+              </div>
+              <span class="help-block" id="error"></span>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                <input name="email" type="email" class="form-control" placeholder="Email">
+              </div>
+              <span class="help-block" id="error"></span>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                <input name="clave" type="password" class="form-control" placeholder="Contraseña">
+              </div>
+              <span class="help-block" id="error"></span>
+            </div>
+          </div>
+          <div class="form-footer">
+            <button type="submit" class="btn btn-info">
+            <span class="glyphicon glyphicon-log-in"></span> Registrarme
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
